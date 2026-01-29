@@ -3,21 +3,22 @@ using UnityEngine;
 
 public class Vector3D : MonoBehaviour
 {
-    float x;
-    float y;
-    float z;
+    public float X { get; private set; }
+    public float Y { get; private set; }
+    public float Z { get; private set; }
+
 
     public Vector3D()
-    {
-        x = 0;
-        y = 0;
-        z = 0;
+    { 
+        X = 0;
+        Y = 0;
+        Z = 0;
     }
 
     public Vector3D(float x, float y, float z)
     {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        X = x;
+        Y = y;
+        Z = z;
     }
 }
